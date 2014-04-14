@@ -54,6 +54,7 @@ import com.nutiteq.vectorlayers.MarkerLayer;
 import com.nutiteq.vectorlayers.NMLModelLayer;
 import com.nutiteq.vectorlayers.Polygon3DLayer;
 
+
 /**
  * This sample has a set of different layers: 
  * a) raster online: TMS, WMS, Bing, MapBox

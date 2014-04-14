@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ZoomControls;
 
 import com.nutiteq.MapView;
+
 import com.nutiteq.advancedmap.R;
 import com.nutiteq.components.Components;
 import com.nutiteq.components.MapPos;

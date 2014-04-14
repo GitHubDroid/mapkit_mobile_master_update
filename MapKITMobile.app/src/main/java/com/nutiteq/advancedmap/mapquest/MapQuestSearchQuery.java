@@ -37,6 +37,7 @@ import com.nutiteq.ui.Label;
 import com.nutiteq.utils.UnscaledBitmapLoader;
 
 
+
 public class MapQuestSearchQuery extends ListActivity implements SearchQueryResults  
 {  
     private static final int SEARCH_DIALOG = 1;

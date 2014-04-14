@@ -1,43 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.nutiteq.advancedmap" android:versionCode="1" android:versionName="1.0-SNAPSHOT" android:installLocation="auto">
-    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="19"/>
+    package="com.nutiteq.advancedmap"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8" android:targetSdkVersion="19" />
     <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
- 
-  <application android:icon="@drawable/icon" android:label="@string/app_name" android:allowBackup="false">
-    <activity android:name="com.nutiteq.advancedmap.activity.LauncherList">
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.LAUNCHER" />
-      </intent-filter>
-    </activity>
-    <activity android:name=".activity.AdvancedMapActivity"></activity>
-    <activity android:name=".activity.CompassMapActivity"></activity>
-    <activity android:name=".activity.GlobeRenderingActivity"></activity>
-    <activity android:name=".activity.ComposedRasterDataSourceActivity"></activity>
-    <activity android:name="com.nutiteq.fragmentmap.FragmentMapActivity"></activity>
-    <activity android:name="com.nutiteq.fragmentmap.InfoActivity"></activity>
-    <activity android:name=".activity.MBTilesMapActivity"></activity>
-    <activity android:name=".activity.BasicMapActivity"></activity>
-    <activity android:name=".activity.VectorFileMapActivity"></activity>
-    <activity android:name=".activity.EditableCartoDbMapActivity"></activity>
-    <activity android:name=".activity.EditableVectorFileMapActivity"></activity>
-    <activity android:name=".activity.CartoDbVectorMapActivity"></activity>
-    <activity android:name=".activity.MapBoxMapActivity"></activity>
-    <activity android:name=".activity.MapsForgeMapActivity"></activity>
-    <activity android:name=".activity.RasterFileMapActivity"></activity>
-    <activity android:name="com.nutiteq.filepicker.FilePicker"></activity>
-    <activity android:name=".activity.GraphhopperRouteActivity"></activity>
-    <activity android:name=".activity.Offline3DMapActivity"></activity>
-    <activity android:name=".activity.WmsMapActivity"></activity>
-    <activity android:name=".activity.AnimatedLocationActivity"></activity>
-    <activity android:name=".activity.MapQuestRouteActivity"></activity>
-    <activity android:name=".activity.CloudMadeRouteActivity"></activity>
-    <activity android:name=".activity.Online3DMapActivity"></activity>
-    <activity android:name=".activity.WfsMapActivity"></activity>
-    <activity
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>"
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"     >
+        
+                <activity android:name="com.nutiteq.advancedmap.activity.AdvancedMapActivity"
+                  android:label="@string/app_name"     >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+                 <activity
     android:name="com.nutiteq.advancedmap.mapquest.MapQuestSearchQuery"
     android:exported="false">
 	    <intent-filter>
@@ -60,8 +43,6 @@
                 android:name="android.app.default_searchable"
                 android:value="com.nutiteq.advancedmap.mapquest.MapQuestSearchQuery" />
 	</activity>
-    
-  </application>
+    </application>
 
 </manifest>
-
